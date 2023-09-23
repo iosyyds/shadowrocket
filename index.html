@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8" />
+        <title>Share</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Themesdesign" name="author" />
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link href="/static/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <link href="/static/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="/static/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+        <link href="/static/css/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+        
+        <script src="/static/js/jquery.min.js"></script>
+        <script src="/static/js/sweetalert2.min.js"></script>
+        
+        <script src="/static/js/layer/layer.js"></script>
+    </head>
+
+    <body style="background-color: #ffffff">
+        <div id="apple">
+            
+        </div>
+        <textarea id="copy" style="display:none;" readonly="readonly"></textarea>
+        <script type="text/javascript" charset="utf-8">
+            function copy(str){
+                $('#copy').text(str).show();
+                var ele = document.getElementById("copy");
+                ele.select();
+                document.execCommand('copy', false, null);
+                $('#copy').hide();
+                layer.msg('复制成功', {time: 8000, icon:1});
+            }
+            
+            $.getJSON("",function(result){
+                $.each(result, function(i, field){
+                    var status = ['border-primary', 'border-success', 'border-danger', 'border-warning'];
+                    var text = ['text-primary', 'text-success', 'text-danger', 'text-warning'];
+                    var ico = ['mdi-bullseye-arrow', 'mdi-check-all', 'mdi-block-helper', 'mdi-alert-outline'];
+                    var title = ['正在检测', '状态正常', '状态异常', '等待检测'];
+                    var html = `
+                                <div class="card border {$status$}" style="margin-bottom: 0px">
+                                    <div class="card-header bg-transparent {$status$}">
+                                        <h5 class="my-0 {$text$}"><i class="mdi {$ico$} me-3"></i>{$username$}</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">{$title$}</h5>
+                                        <p class="card-text">{$time$}</p>
+<p><span><span><a href="https://yyds.gitbook.io/t/" target="_blank"><span><span><strong><span><span><span style="color:#333333;"><span><span>【永久免费梯子】</span></span></span></span></span></strong></span></span></a></span></span><span><span><a href="http://ka.sbios.cn" target="_blank"><span><span><strong><span><span><span style="color:#333333;"><span><span><span><span>【购买独享小火箭】</span></span></span></span></span></span></span></strong></span></span></a></span></span></p>
+<p style="text-align:left;">
+	<strong><span style="color:#333333;"><a href="https://docs.qq.com/doc/DYUVSQkNUZmd3RUZ3" target="_blank">使用前必须先阅读使用教程⚠️点我查看</a></span></strong> 
+</p>
+	<br />
+                                        <button class="btn btn-outline-secondary waves-effect" onclick="copy('{$username$}')">复制帐号</button>
+                                        <button class="btn btn-outline-secondary waves-effect" style="margin-left: 8px" onclick="copy('{$password$}')">复制密码</button>
+                                    </div>
+                                </div>`;
+                    html = html.replace('{$status$}', status[field['status']]);
+                    html = html.replace('{$status$}', status[field['status']]);
+                    html = html.replace('{$text$}', text[field['status']]);
+                    html = html.replace('{$ico$}', ico[field['status']]);
+                    html = html.replace('{$title$}', title[field['status']]);
+                    html = html.replace('{$time$}', field['time']);
+                    html = html.replace('{$username$}', field['username']);
+                    html = html.replace('{$username$}', field['username']);
+                    html = html.replace('{$password$}', field['password']);
+                    $("#apple").append(html);
+                });
+            });
+        </script>
+    </body>
+</html>
