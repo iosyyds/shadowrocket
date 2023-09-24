@@ -25,9 +25,9 @@
 #### 【**抖音留言改地区，主页改IP**】 <https://xn--yfrr86jl0e6wq.com/#/register?code=P3HQ2CgY>
 *****
 ## **Apple id 使用说明**
-**1. 打开App Store
-2. 点击右上角头像
-3. 复制粘贴ID和密码，点登录
-4.【⚠重点⚠】【Apple ID保安】看到这个页面，只能选“其他选项”
-5. 弹出窗口选“不要升级”**
-![](https://pan.imotao.com/view.php/8e6df14f582e6ecbe8f7b885ca09ca7b.png)
+- 打开App Store
+- 点击右上角头像
+- 复制粘贴ID和密码，点登录
+- 【⚠重点⚠】【Apple ID保安】看到这个页面，只能选“其他选项”
+- 弹出窗口选“不要升级”
+![image](https://github.com/iosyyds/shadowrocket/blob/main/assets/images/xhjj.png)
