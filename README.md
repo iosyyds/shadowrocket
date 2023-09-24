@@ -1,5 +1,3 @@
-# shadowrocket
-Shadowrocket(小火箭)2023最新共享账号 共享小火箭账号
 #### **VPN节点订阅地址**： <https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=3fb7dda727791a4543b321fd6859d6ae>
 
 
@@ -31,11 +29,5 @@ Shadowrocket(小火箭)2023最新共享账号 共享小火箭账号
 2. 点击右上角头像
 3. 复制粘贴ID和密码，点登录
 4.【⚠重点⚠】【Apple ID保安】看到这个页面，只能选“其他选项”
-5. 弹出窗口选“不要升级”****
-![](.topwrite/assets/AgAABkNkI_rJZzHZZA9FLL0BYJLTi4z8.png)
-
-
-
-
-
-
+5. 弹出窗口选“不要升级”**
+![](https://pan.imotao.com/view.php/8e6df14f582e6ecbe8f7b885ca09ca7b.png)
