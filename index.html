@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+          name="viewport"/>
+    <meta content="Shadowrocket, 小火箭, iOS, 免费苹果账号, 美区, apple id, 使用教程, shadowsocks, V2Ray, Trojan, 甜甜, VPN"
+          name="keywords"/>
+    <meta content="Shadowrocket(小火箭)在线安装, 提供免费的苹果账号用于安装Shadowrocket" name="description"/>
+    <title>Shadowrocket(小火箭)</title>
+    <link href="https://is4-ssl.mzstatic.com/image/thumb/Purple126/v4/c5/50/ad/c550ad28-d7bb-209c-05a6-849296bfddc5/AppIcon-0-1x_U007emarketing-0-10-0-0-85-220.png/230x0w.webp"
+            rel="shortcut icon"/>
+    <link href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+          rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.staticfile.org/flag-icons/6.6.6/css/flag-icons.min.css" rel="stylesheet"/>
+    <style>
+        a {
+            text-decoration: unset;
+        }
+
+        .border-success {
+            border-color: #6fd088 !important;
+        }
+
+        :root {
+            --bs-success-rgb: 111, 208, 136;
+        }
+    </style>
+</head>
+
+<body class="text-center container-fluid py-5 m-auto">
+<main>
+    <img alt="" class="shadow mb-4 bg-body-tertiary rounded-circle" height="120" width="120"
+         src="https://is4-ssl.mzstatic.com/image/thumb/Purple126/v4/c5/50/ad/c550ad28-d7bb-209c-05a6-849296bfddc5/AppIcon-0-1x_U007emarketing-0-10-0-0-85-220.png/230x0w.webp"/>
+    <h1 class="mb-3 fw-normal">Shadowrocket (小火箭)</h1>
+    <div class="mx-1 row justify-content-center">
+        <ol class="col-auto text-start">
+            <li>打开iPhone/iPad的蓝色<strong>&nbsp AppStore &nbsp</strong>软件（请不要打开设置）</li>
+            <li>右上角点击<strong>&nbsp 个人头像&nbsp </strong>进入账户，下拉到最底找到并点击<strong>&nbsp
+                退出登录&nbsp</strong></li>
+            <li><strong> &nbsp复制&nbsp</strong>本网站 共享账号和密码</li>
+            <li>点击登录，提示<strong> &nbspApple id安全&nbsp</strong>，请点击<strong> &nbsp其他选项-不升级&nbsp</strong>
+            </li>
+            <li>
+                搜索 <strong> &nbsp<a class="btn btn-primary btn-sm"
+                                      href="https://apps.apple.com/us/app/shadowrocket/id932747118"
+                                      target="_blank">Shadowrocket</a>&nbsp</strong>下载，或者其他你想下载的软件
+            </li>
+            <li>用完务必<strong>&nbsp退出登录&nbsp</strong>，避免你的手机被锁</li>
+        </ol>
+    </div>
+    <div class="mb-3">
+        <a class="btn btn-outline-primary btn-lg" href="http://ka.sbios.cn/" target="blank">购买独享小火箭</a>
+    </div>
+    <div class="row text-start justify-content-center" id="apple">
+        <div class="col-auto my-5" id="loading"><i aria-hidden="true" class="spinner-border me-5"></i> 加载最新账号信息
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <hr class="devider devider-dotted"/>
+        </div>
+        <div class="col-md-8">
+            <p>Designed to protect your Internet traffic.</p>
+            <p><a href="https://iosyyds.net/" target="blank">一鍵接入，鏈接全球！</a></p>
+        </div>
+    </div>
+    <p class="mb-3 text-body-secondary">©&nbsp;2022~2023 <a href="https://iosyyds.net/" target="blank">甜甜</a></p>
+</main>
+ <script src="/assets/css/sweetalert2.min.css"></script>
+<script src="/assets/js/sweetalert2.all.min.js"></script>
+<script>
+     let password = "5555";
+    if (localStorage.getItem('pan_password') == password) {
+
+    } else {
+        checkPassword("success", "输入密码进入")
+    }
+
+    function checkPassword(ic, ti) {
+        Swal.fire({
+ title: '温馨提示',
+ icon: 'info',
+  html: 
+			'<p>欢迎访问小火箭账号共享平台 <p>本网站只用于个人学习交流</p><p>密码在公众号：甜甜小窝,回复 验证码 获取</p><p>只需一本证书就可以签名本站所有应用</p><p>定制证书客服微信:nbios</p>',
+  input: 'password',
+  closeOnConfirm: false,
+ showDenyButton: true,
+denyButtonText: `获取密码`,
+  allowOutsideClick: false,
+   confirmButtonText:'确定访问',
+  inputPlaceholder: '输入密码后，点确定访问',
+  inputAttributes: {
+    maxlength: 10,
+    autocapitalize: 'off',
+    autocorrect: 'off'
+  },
+			inputValidator: (value) => {
+    if (value == '') {
+                    return '密码不能为空！'
+                } else if (value == password) {
+                    Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: '欢迎访问',
+  showConfirmButton: false,
+  timer: 1500
+});
+                    localStorage.setItem("pan_password", value);
+                } else {
+                    return '密码错误！请重新输入！';
+                }
+  }
+	}).then((result) => {
+  /* Read more about isConfirmed, isDenied below */
+  if (result.isDenied) {
+    Swal.fire({
+  showConfirmButton:false,
+  allowOutsideClick: false,
+  icon: 'info',
+  html: 
+			'<p>请截图到微信扫描上方微信公众号二维码</p><p>发送：密码，获取访问密码</p><p>获取密码后，刷新此页面输入密码即可</p>',
+  imageUrl: 'https://pan.imotao.com/view.php/52d2b60fc86d7e8a9bed2c26514d00b3.jpg',
+  imageWidth: 200,
+  imageHeight: 200,
+  imageAlt: 'Custom image',
+})
+  } 
+})
+    }
+</script>
+<textarea id="copy" readonly="readonly" style="display: none"></textarea>
+<script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/5.1.3/js/bootstrap.min.js"
+        type="application/javascript"></script>
+<script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"
+        type="application/javascript"></script>
+<script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/sweetalert/2.1.2/sweetalert.min.js"
+        type="application/javascript"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JWCME7N22C"></script>
+<script charset="utf-8" type="text/javascript">
+    const arr = [
+        "https://apple.laogoubi.net/s/11da2cdc6dbb8c625e1fa578cdc78dea",
+        "https://apple.laogoubi.net/s/4c9f147424e846afef9d7caac0d33f44",
+        "https://apple.laogoubi.net/s/c7d1e73290a646f2513f6f0b75843b0b",
+        "https://apple.laogoubi.net/s/90dcad228f402e73150bdb2c805f6e87",
+        "https://apple.laogoubi.net/s/9f6b8dae0a078750b4e7c9a5eddc6e19",
+        "https://apple.laogoubi.net/s/b5dd3a2f3ecac2fded959edabeec4c78",
+        "https://apple.laogoubi.net/s/df4ab9de842ce5f0abefcc560cf504f0",
+        "https://apple.laogoubi.net/s/db6c27585e70cf40a094709d08bba102",
+        "https://apple.laogoubi.net/s/e1aa39381e5ec86a1b8214c10fd4a887",
+        "https://apple.laogoubi.net/s/ec1c4f5415388e26f4c5d6c64880cdd5",
+        "https://apple.laogoubi.net/s/af7cb00fd2c1700a42f26f8f0d80af96",
+        "https://apple.laogoubi.net/s/2654e78b32618507a607eef3da6a0b2e",
+        "https://apple.laogoubi.net/s/b5b6105b97b8d8bc4cdb1f7e711a14fe",
+        "https://aunlock.laogoubi.net/p/09f8a44a62bed3a41d038472036d0035",
+        "https://apple.laogoubi.net/s/2792b9ed836eca1111823b2bd0930647"
+    ];
+
+    function copy(str) {
+        $("#copy").text(str).show();
+        const ele = document.getElementById("copy");
+        ele.select();
+        document.execCommand("copy", false, null);
+        $("#copy").hide();
+        swal({
+            title: "复制成功",
+            icon: "success",
+            timer: 1000,
+            buttons: false,
+        });
+    }
+
+    function minsDiff(time) {
+        return parseInt((new Date() - new Date(time)) / 60000);
+    }
+
+    function load(field) {
+        if (field["status"] === 1) {
+            //var status = ['primary', 'success', 'danger', 'warning'];
+            //var ico = ['robot', 'check2-all', 'slash-circle', 'exclamation-triangle'];
+            //var title = ['检测中', '状态正常', '状态异常', '等待检测'];
+            const country = {
+                美国: "us",
+                澳大利亚: "au",
+                中国大陆: "cn",
+                台湾: "tw",
+                香港: "hk",
+                韩国: "kr",
+                日本: "jp",
+                印度尼西亚: "id",
+                null: "un"
+            };
+            let html = `<div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
+            								<div class="card border-success mb-3">
+            									<div class="card-header bg-transparent border-bottom-0 border-success">
+            										<h5 class="my-0 text-success">
+            											<i class="me-3 bi bi-check2-all"></i> {{username}} <span class="float-end"><i class="fi fi-{{country_code}} fis rounded-circle"></i> {{country}}</span>
+            										</h5>
+            									</div>
+            									<div class="card-body">
+                              <p class="card-text">检测时间：{{time}}</p>
+                              <button class="btn btn-outline-secondary waves-effect" onclick="copy('{{username}}')">复制帐号</button>
+                              <button class="btn btn-outline-secondary waves-effect" onclick="copy('{{password}}')">复制密码</button>
+            									</div>
+            								</div>
+                          </div>`;
+            html = html.replace(/{{time}}/g, field["time"] + " <code class='float-end'>" + minsDiff(field["time"]) + "分钟前</code>");
+            html = html.replace(/{{country}}/g, field["country"] ?? "");
+            html = html.replace(/{{country_code}}/g, field["country"] ? country[field["country"]] : "");
+            html = html.replace(/{{username}}/g, field["username"]);
+            html = html.replace(/{{password}}/g, field["password"]);
+            $("#apple").prepend(html);
+        }
+    }
+
+    $(document).ready(function () {
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-JWCME7N22C');
+
+        arr.forEach((url) => {
+            $.getJSON(url)
+                .done(function (data) {
+                    $.each(data, function (i, item) {
+                        load(item);
+                    });
+                })
+                .fail(function () {
+                    console.log(url);
+                });
+        });
+
+        setTimeout(function () {
+            document.getElementById("loading").remove();
+        }, 3000);
+    });
+    
+</script>
+</body>
+</html>
