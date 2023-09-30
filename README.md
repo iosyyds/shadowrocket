@@ -10,7 +10,7 @@
 ***
 
 
-#### **正版小火箭获取**： <https://id.iospro.vip>
+#### **正版小火箭获取**： <[https://iosyyds.github.io/shadowrocket/](https://iosyyds.github.io/shadowrocket/)>
 
 
 ***
