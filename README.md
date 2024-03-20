@@ -1,4 +1,4 @@
-#### **VPN节点订阅地址**： <https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=3fb7dda727791a4543b321fd6859d6ae>
+#### **VPN节点订阅地址**： <https://7i2k.netlify.app/zh/projects>
 
 
 ***
